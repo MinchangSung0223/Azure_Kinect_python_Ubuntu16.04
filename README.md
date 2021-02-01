@@ -1,11 +1,12 @@
 # Azure_Kinect_python_Ubuntu16.04
 이 레포지토리는 Azure Kinect 카메라의 cpp 함수를 shared object file을 통해 이용할 수 있게 만들어 줍니다.
 다음의 다섯가지 데이터를 지원합니다.
-1.Color Image
-2.Depth Image
-3.Color Image to Depth Geometry
-4.Depth Image to Color Geometry
-5.Dpeth Image to Color Geometry Pointcloud
+
+### 1.Color Image
+### 2.Depth Image
+### 3.Color Image to Depth Geometry
+### 4.Depth Image to Color Geometry
+### 5.Dpeth Image to Color Geometry Pointcloud
 
 
 
