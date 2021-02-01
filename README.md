@@ -1,5 +1,18 @@
 # Azure_Kinect_python_Ubuntu16.04
 이 레포지토리는 Azure Kinect 카메라의 cpp 함수를 shared object file을 통해 이용할 수 있게 만들어 줍니다.
+다음의 다섯가지 데이터를 지원합니다.
+1.Color Image
+2.Depth Image
+3.Color Image to Depth Geometry
+4.Depth Image to Color Geometry
+5.Dpeth Image to Color Geometry Pointcloud
+
+
+
+
+
+
+# install
 ```bash
 git clone  --recursive -b release/1.1.x https://github.com/microsoft/Azure-Kinect-Sensor-SDK.git
 cd Azure-Kinect-Sensor-SDK.git
@@ -54,6 +67,7 @@ add_subdirectory(viewer)
 add_subdirectory(viewer_shared)
 
 ```
+빌드 진행
 ```bash
 cd Azure-Kinect-Sensor-SDK
 mkdir build
@@ -61,10 +75,13 @@ cd build
 cmake ..
 make -j16
 ```
+빌드 후 생성된 shared object file을 python_example 폴더로 이동
 ```bash
 cp build/bin/libviewer_opengl_shared.so Azure_Kinect_python_Ubuntu16.04/python_example/viewer_opengl.so
 cd  Azure_Kinect_python_Ubuntu16.04/python_example
 ```
+pointcloud를 보기 위해 open3d install
+
 ```bash
 pip3 install open3d 
 pip3 install open3d_azure_kinect_ubuntu1604_fix
